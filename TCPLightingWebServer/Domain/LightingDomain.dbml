@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tcp" Class="LightingDomainDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\App_Data\tcp.mdf;Integrated Security=True" SettingsObjectName="TCPLightingWebServer.Properties.Settings" SettingsPropertyName="tcpConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.LightingDictionary" Member="LightingDictionaries">
+    <Type Name="LightingDictionary">
+      <Column Name="ItemKey" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

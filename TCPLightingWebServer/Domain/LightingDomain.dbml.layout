@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LightingDomain">
+  <DataContextMoniker Name="/LightingDomainDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7d94980b-b0c7-4b0a-82ab-2ed99b454b40" absoluteBounds="8.5, 1.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LightingDomainDataContext/LightingDictionary" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cea1bb74-5989-437a-9c9f-bede4f9d17ba" absoluteBounds="8.515, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

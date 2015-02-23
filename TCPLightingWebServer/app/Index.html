@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="lightApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Lighting site</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+    <script src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src="js/Services.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="HomeController">
+
+    <ul>
+        <span>{{message}}</span>
+        <button ng-show="showButton" ng-click="tryAgain()">tryAgain</button>
+    </ul>
+    <tabset>
+        <tab ng-repeat="room in rooms" heading="{{room.Name}}"  >
+
+            <tabset vertical="true" type="device">
+                <tab ng-repeat="device in room.Devices" heading="{{device.DeviceID}}">
+                    <label>State: </label><span>{{device.State}}</span>
+                    <label>Level: </label><span>{{device.Level}}</span>
+                </tab>
+            </tabset>
+        </tab>
+    </tabset>
+</body>
+</html>
